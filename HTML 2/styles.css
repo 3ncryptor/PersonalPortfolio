@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3em;
+}
+
+.tagline {
+    position: relative;
+    z-index: 2;
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.skills {
+    margin: 20px 0;
+}
+
+.skills i {
+    margin: 0 10px;
+}
+
+.portfolio {
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 10px;
+    max-width: 300px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gif {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.videos {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact {
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

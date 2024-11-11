@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Amazon-Inspired E-commerce Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magic-ui/dist/magic-ui.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-content">
+        <header>
+            <nav>
+                <div id="logo-container">
+                    <img src="amazon-logo.png" height="50" width="50" alt="AMAZON LOGO" aria-label="100">
+                    
+                </div>
+                <div id="search-container">
+                    <button id="search-icon" class="magic-btn magic-btn-icon">
+                        <i class="magic-icon magic-icon-search"></i>
+                    </button>
+                    <input type="text" id="search-bar" class="magic-input" placeholder="Search..." style="display: none;">
+                </div>
+                <div id="category-dropdown">
+                    <button id="dropdown-btn" class="magic-btn">
+                        Categories <i class="magic-icon magic-icon-chevron-down"></i>
+                    </button>
+                    <ul id="dropdown-content" class="magic-dropdown-menu" style="display: none;">
+                        <li><a href="#" class="magic-dropdown-item">Electronics</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Books</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Home & Kitchen</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Beauty</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Toys & Games</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Sports & Outdoors</a></li>
+                        <li><a href="#" class="magic-dropdown-item">Automotive</a></li>
+                    </ul>
+                </div>
+                <div id="account-container">
+                    <button id="account-btn" class="magic-btn">
+                        <i class="magic-icon magic-icon-user"></i> Account
+                    </button>
+                    <div id="account-dropdown" class="magic-dropdown-menu" style="display: none;">
+                        <a href="#" class="magic-dropdown-item">Sign In</a>
+                        <a href="#" class="magic-dropdown-item">Register</a>
+                        <a href="#" class="magic-dropdown-item">My Orders</a>
+                    </div>
+                </div>
+                <div id="cart-container">
+                    <button id="cart-btn" class="magic-btn">
+                        <i class="magic-icon magic-icon-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <section id="hero-banner">
+            <div class="banner-scroll-container">
+                <img src="Banner 1.png" alt="Banner 1" height="250" width="1500">
+                <img src="Banner 2.png" alt="Banner 2" height="250" width="1500">
+                <img src="Banner 3.png" alt="Banner 3" height="250" width="1500">
+            </div>
+        </section>
+
+        <section id="product-grid"></section>
+    </main>
+
+    <div id="cart-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: ₹<span id="total-amount">0.00</span></div>
+            <button id="checkout-btn" class="magic-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/magic-ui/dist/magic-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
