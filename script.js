@@ -1,19 +1,6 @@
 // GSAP Animations
 document.addEventListener('DOMContentLoaded', () => {
-//     // Hero section typing effect
-//     gsap.registerPlugin(TextPlugin);
-//     gsap.to('#typing-title', {
-//         text: "Hi, I'm Aryan Vibhuti",
-//         duration: 2,
-//         ease: "power1.inOut"
-//     });
-
-//     gsap.to('.hero-subtitle', {
-//         text: "Ethical Hacker & Developer",
-//         delay: 2.5,
-//         duration: 2,
-//         ease: "power1.inOut"
-//     });
+    
     const typingTitle = document.getElementById('typing-title');
     const text = "Hi, I'm Aryan Vibhuti";
 
@@ -32,25 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000); // Delay before restarting
         }
     }
-
-    // const typingTitle = document.getElementById('typing-title');
-    // const text = "Ethical Hacker  & Developer";
-    // let index = 0;
-    
-    // function type() {
-    //     if (index < text.length) {
-    //         typingTitle.innerHTML += text.charAt(index);
-    //         index++;
-    //         setTimeout(type, 100); // Typing speed
-    //     } else {
-    //         setTimeout(() => {
-    //             typingTitle.innerHTML = ""; // Clear text for looping
-    //             index = 0; // Reset index
-    //             type(); // Restart typing
-    //         }, 1000); // Delay before restarting
-    //     }
-    // }
-    
+ 
     // Start the typing effect
     type();
     
@@ -141,9 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.play(); // Play video when in view
+                entry.target.play(); 
             } else {
-                entry.target.pause(); // Pause video when out of view
+                entry.target.pause(); 
             }
         });
     });
@@ -187,9 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// CLAUDE SCRIPT 
-
-// Add this to the top of your script.js file
 document.addEventListener('DOMContentLoaded', () => {
     // Project Cards Animation Fix
     const projectCards = document.querySelectorAll('.project-card');
@@ -239,44 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // // Matrix Rain Effect for Hero Section
-    // const canvas = document.createElement('canvas');
-    // const heroSection = document.querySelector('.hero');
-    // canvas.style.position = 'absolute';
-    // canvas.style.top = '0';
-    // canvas.style.left = '0';
-    // canvas.style.zIndex = '1';
-    // heroSection.appendChild(canvas);
-
-    // const ctx = canvas.getContext('2d');
-    // canvas.width = heroSection.offsetWidth;
-    // canvas.height = heroSection.offsetHeight;
-
-    // const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
-    // const drops = [];
-    // const fontSize = 14;
-    // const columns = canvas.width / fontSize;
-
-    // for(let i = 0; i < columns; i++) {
-    //     drops[i] = 1;
-    // }
-
-    // function drawMatrix() {
-    //     ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-    //     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    //     ctx.fillStyle = '#0F0';
-    //     ctx.font = fontSize + 'px monospace';
-
-    //     for(let i = 0; i < drops.length; i++) {
-    //         const text = matrix[Math.floor(Math.random() * matrix.length)];
-    //         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-    //         if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-    //             drops[i] = 0;
-    //         }
-    //         drops[i]++;
-    //     }
-    // }
-
+   
     // Skill Cards Glow Effect
     const skillCards = document.querySelectorAll('.skill-card');
     skillCards.forEach(card => {
@@ -308,15 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
-
-
-
-
-
-// editd by chatgpt
 document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
