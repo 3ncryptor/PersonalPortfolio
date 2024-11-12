@@ -487,9 +487,6 @@ body {
     font-size: 0.9rem;
 }
 
-CLAUDE SCRIPT
-
-/* Add these to your styles.css */
 
 /* Magnetic hover effect transition */
 .social-links a {
@@ -531,17 +528,6 @@ CLAUDE SCRIPT
         0 0 20px rgba(0, 191, 255, 0.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Add these styles to your styles.css file */
 
 /* Project Cards */
 .project-card {
@@ -605,12 +591,6 @@ CLAUDE SCRIPT
     z-index: 1;
 }
 
-
-
-
-
-
-/* edited by chatgpt */
 Project Card Styles
 .project-card {
     background: rgba(0, 31, 63, 0.9);
